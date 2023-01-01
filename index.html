@@ -38,10 +38,7 @@
 
             <div class="header-container">
                 <a class="header-logo" href="https://aviatorwatch.swiss/ru/by" aria-label="logo">
-                    <img class="header-logo-img header-logo-img--1 logo-black lazy loading"
-                        src="https://aviatorwatch.swiss/assets/template/images/logo-only-black.svg" alt="Logo"
-                        width="154" height="84" data-was-processed="true">
-                    <img class="header-logo-img header-logo-img--2 logo-black lazy loading" src="img/aviator-logo.svg"
+                    <img class="header-logo-img header-logo-img--2 logo-black lazy loading" src="img/logo.svg"
                         alt="Logo" width="101" height="54" data-was-processed="true">
                 </a>
                 <button type="button" class="header-mobilemenu-btn js-mobilemenu-btn" aria-label="Open Mobile Menu"><i
@@ -730,14 +727,16 @@
                         <a class="good-bar__list-link" href="#!">Features</a>
                     </li>
                 </ul>
-                <p class="good-bar__price">1’200 CHF</p>
-                <p class="good-bar__status good-bar__status--available">
-                    <span class="good-bar__status-text good-bar__status-text--available">Available</span>
-                    <span class="good-bar__status-text good-bar__status-text--not-available">Out of Stock</span>
-                    <span class="good-bar__status-text good-bar__status-text--pre-order">Pre-Order</span>
-                </p>
-                <a class="good-bar__button-1 btn" href="#!">ADD TO CART</a>
-                <a class="good-bar__button-2 btn btn-nooverlay" href="#!">BUY BY PHONE</a>
+                <div class="good-bar__service">
+                    <p class="good-bar__price">1’200 CHF</p>
+                    <p class="good-bar__status good-bar__status--available">
+                        <span class="good-bar__status-text good-bar__status-text--available">Available</span>
+                        <span class="good-bar__status-text good-bar__status-text--not-available">Out of Stock</span>
+                        <span class="good-bar__status-text good-bar__status-text--pre-order">Pre-Order</span>
+                    </p>
+                    <a class="good-bar__button-1 btn" href="#!">ADD TO CART</a>
+                    <a class="good-bar__button-2 btn btn-nooverlay" href="#!">BUY BY PHONE</a>
+                </div>
             </div>
 
         </div>
@@ -2713,45 +2712,7 @@
             <h2 class="visually-hidden">Products</h2>
             <div class="good__content">
                 <div class="good__list swiper swiper-0">
-                    <!-- Content mobile -->
-                    <!-- <div class="good__item-text-content slider-info-content slider-info-content_mobile">
-                        <div class="slider-info-content__wrapper">
-                            <p class="good__price">1’200 CHF</p>
-                            <p class="good__status good__status--available">
-                                <span class="good__status-text good__status-text--available">Available</span>
-                                <span class="good__status-text good__status-text--not-available">Out of Stock</span>
-                                <span class="good__status-text good__status-text--pre-order">Pre-Order</span>
-                            </p>
-                            <div class="good__buttons-wrapper">
-                                <a class="good__button good__button--primary btn" href="#!">ADD TO CART</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="swiper-wrapper">
-                        <!-- <div class="good__item swiper-slide">
-                            <div class="good__item-content">
-                                <picture class="good__img-wrapper">
-                                    <source media="(min-width: 2561px)"
-                                        srcset="img/good-1-wide-desktop-2.jpg 1x, img/good-1-wide-desktop-2@2x.jpg 2x, img/good-1-wide-desktop-2@3x.jpg 3x">
-                                    <source media="(min-width: 2560px)"
-                                        srcset="img/good-1-wide-desktop.jpg 1x, img/good-1-wide-desktop@2x.jpg 2x, img/good-1-wide-desktop@3x.jpg 3x">
-                                    <source media="(min-width: 1441px)"
-                                        srcset="img/good-1-1441.jpg 1x, img/good-1-1441@2x.jpg 2x, img/good-1-1441@3x.jpg 3x">
-                                    <source media="(min-width: 1440px)"
-                                        srcset="img/good-1-desktop.jpg 1x, img/good-1-desktop@2x.jpg 2x, img/good-1-desktop@3x.jpg 3x">
-                                    <source media="(min-width: 1025px)"
-                                        srcset="img/good-1-1025.jpg 1x, img/good-1-1025@2x.jpg 2x, img/good-1-1025@3x.jpg 3x">
-                                    <source media="(min-width: 1024px)"
-                                        srcset="img/good-1-laptop.jpg 1x, img/good-1-laptop@2x.jpg 2x, img/good-1-laptop@3x.jpg 3x">
-                                    <source media="(min-width: 667px)"
-                                        srcset="img/good-1-tablet.jpg 1x, img/good-1-tablet@2x.jpg 2x, img/good-1-tablet@3x.jpg 3x">
-                                    <source media="(min-width: 361px)"
-                                        srcset="img/good-1-wide-mobile.jpg 1x, img/good-1-wide-mobile@2x.jpg 2x, img/good-1-wide-mobile@3x.jpg 3x">
-                                    <img class="good__img" src="img/good-1.jpg"
-                                        srcset="img/good-1@2x.jpg 2x, img/good-1@3x.jpg 3x" alt="">
-                                </picture>
-                            </div>
-                        </div> -->
+                    <div class="swiper-wrapper first-screen-swipper">
                         <div class="good__item swiper-slide">
                             <div class="good__item-content">
                                 <picture class="good__img-wrapper">
@@ -2780,6 +2741,10 @@
                                         img/clock-slide-360@2x.jpg 2x,
                                         img/clock-slide-360@3x.jpg 3x">
                                 </picture>
+                            </div>
+                        </div>
+                        <div class="good__item swiper-slide">
+                            <div class="good__item-content">
                                 <picture class="good__img-wrapper">
                                     <source media="(min-width: 2561px)" srcset="img/man-slide-5120.jpg 1x, 
                                         img/man-slide-5120@2x.jpg 2x,
@@ -2836,6 +2801,10 @@
                                         img/clock-slide-360@2x.jpg 2x,
                                         img/clock-slide-360@3x.jpg 3x">
                                 </picture>
+                            </div>
+                        </div>
+                        <div class="good__item swiper-slide">
+                            <div class="good__item-content">
                                 <picture class="good__img-wrapper">
                                     <source media="(min-width: 2561px)" srcset="img/man-slide-5120.jpg 1x, 
                                         img/man-slide-5120@2x.jpg 2x,
@@ -3579,7 +3548,7 @@
                 </picture>
             </div>
             <ul class="features__list">
-                <li class="features__item">
+                <li class="features__item layout_first gray">
                     <div class="features__text-column">
                         <div class="features__text-wrapper">
                             <h3 class="features__heading section-heading">Luxuriously patterned dial</h3>
@@ -3617,7 +3586,7 @@
                         </picture>
                     </div>
                 </li>
-                <li class="features__item features__item--figure">
+                <li class="features__item features__item--figure layout_second">
                     <div class="features__text-wrapper">
                         <h3 class="features__heading section-heading section-heading--center">Headline number three</h3>
                     </div>
@@ -3669,7 +3638,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="features__item">
+                <li class="features__item layout_first">
                     <div class="features__text-column">
                         <div class="features__text-wrapper">
                             <h3 class="features__heading section-heading">Luxuriously patterned dial</h3>
@@ -3707,7 +3676,7 @@
                         </picture>
                     </div>
                 </li>
-                <li class="features__item">
+                <li class="features__item layout_first">
                     <div class="features__text-column">
                         <div class="features__text-wrapper">
                             <h3 class="features__heading section-heading">Luxuriously patterned dial</h3>
@@ -3745,7 +3714,7 @@
                         </picture>
                     </div>
                 </li>
-                <li class="features__item">
+                <li class="features__item layout_first">
                     <div class="features__text-column">
                         <div class="features__text-wrapper">
                             <h3 class="features__heading section-heading">Luxuriously patterned dial</h3>
@@ -3783,7 +3752,7 @@
                         </picture>
                     </div>
                 </li>
-                <li class="features__item">
+                <li class="features__item layout_first">
                     <div class="features__text-column">
                         <div class="features__text-wrapper">
                             <h3 class="features__heading section-heading">Luxuriously patterned dial</h3>
@@ -3821,7 +3790,7 @@
                         </picture>
                     </div>
                 </li>
-                <li class="features__item">
+                <li class="features__item layout_first">
                     <div class="features__text-column">
                         <div class="features__text-wrapper">
                             <h3 class="features__heading section-heading">Luxuriously patterned dial</h3>
@@ -4051,7 +4020,7 @@
                 </div>
             </div>
             <div class="people__button people__button--next swiper-button-next"></div>
-            <div class="people__button people__button--prev swiper-button-prev"></div>
+            <div class="people__button people__button--prev swiper-button-prev btn_white"></div>
         </section>
         <section class="main-banner">
             <div class="main-banner__content">

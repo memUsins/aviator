@@ -55,11 +55,15 @@ if (goodSection) {
   goodSection.appendChild(slider2Copy);
 
   let swiper0 = new Swiper(".swiper-0", {
-    slidesPerView: 1,
     spaceBetween: 0,
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      }
     },
     speed: 400,
     loop: true,
@@ -231,7 +235,7 @@ if (referenceSection) {
     if (referenceSection.offsetWidth >= 1024) textScale = 4.5;
     else if (referenceSection.offsetWidth < 768) textScale = 2.5;
 
-    if (referenceText.offsetHeight * textScale > referenceSection.offsetHeight - 210) {
+    if (referenceText.offsetHeight * textScale > referenceSection.offsetHeight) {
       referenceSection.classList.add('reference--compact');
       shrinkReferenceText();
       referenceButton.style.display = 'block';
